@@ -1,7 +1,6 @@
 seajs.config({
     base:"/",
     alias:{
-        "test": "/test/init",
 		"boot": "/js/boot",
 		"base": "/js/my/base/base",
 		"imageloader": "/js/my/util/imageloader",
@@ -15,7 +14,8 @@ seajs.config({
 		"Game": "/js/my/component/Game",
 		"Layer": "/js/my/component/Layer",
 		"Sprite": "/js/my/component/Sprite",
-		"AStar": "/js/my/ai/AStar"
+		"AStar": "/js/my/ai/AStar",
+		"Maths": "/js/my/util/Maths"
     },
     preload:[
     ]
