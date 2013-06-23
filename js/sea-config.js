@@ -6,6 +6,7 @@ seajs.config({
 		"base": "/js/my/base/base",
 		"imageloader": "/js/my/util/imageloader",
 		"scriptloader": "/js/my/util/scriptloader",
+		"dom": "/js/my/util/dom",
 		"Component": "/js/my/component/Component",
 		"Animation": "/js/my/component/Animation",
 		"DisplayObject": "/js/my/component/DisplayObject",
