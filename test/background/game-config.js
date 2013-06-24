@@ -1,0 +1,6 @@
+seajs.config({
+    base:"/",
+    alias:{
+		
+    }
+});

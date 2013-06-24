@@ -1,17 +1,9 @@
 define(function( require, exports ){
 	var QUnit = require('QUnit');
-	
-	
 	var Maths = require("Maths");
-	QUnit.begin(function(){
-		console.log('begin')
-	})
-	QUnit.testDone(function(){
-		console.log('done')
-	})
 	
 	QUnit.test('Maths Test Case:', function(assert){
-		for( var i=0; i<1000; i++ ){
+		for( var i=0; i<10; i++ ){
 			//Maths.rand()
 			assert.equal(Maths.rand(0), 0, "rand(0) === 0");
 			assert.equal(Maths.rand(0,0), 0, "rand(0,0) === 0");
@@ -35,5 +27,45 @@ define(function( require, exports ){
 			assert.ok( Maths.randInt(-5) >= -5 && Maths.randInt(-5) <= 0, "should randInt(-5) return [-5, 0]" );
 		}
 	});
-
+	
+	//ImageLoader
+//	var ImagerLoader = require("ImageLoader");
+//	QUnit.asyncTest("ImageLoader Test Case", function(assert){
+//		console.log("assert:", assert)
+//		var arr = [
+//			{id:"1", src:"/images/apple-1.png"},
+//			{id:"2", src:"/images/apple-2.png"},
+//			{id:"3", src:"/images/apple.png"},
+//			{id:"4", src:"/images/banana-1.png"},
+//			{id:"5", src:"/images/banana-2.png"},
+//			{id:"6", src:"/images/banana.png"}
+//		];
+//		ImagerLoader.load(arr, function(i, total){
+//			console.log(i)
+//		});
+//		assert.ok( true )
+//	});
+	
+//	var KeyEvent = require("KeyEvent");
+//	KeyEvent.on();
+	
+	QUnit.test("UI Test Case:", function( assert ){
+		var UI = require("UI");
+		console.log(UI)
+		var ui = new UI();
+		ui.onSoundOpen = function(){
+			assert.ok( true, "onSoundOpen" )
+		};
+		
+		ui.onSoundClose = function(){
+			assert.ok( true, "onSoundClose" )
+		};
+		
+		ui.onPlay = function(){
+			assert.ok( true, "onPlay" )
+		};
+		ui.onPause = function(){
+			assert.ok( true, "onPause" )
+		};
+	});
 });
