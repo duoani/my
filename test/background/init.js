@@ -1,5 +1,5 @@
 define(function( require, exports, module ){
-	var dom = require('dom');
+	var dom = require('Dom');
 	
 	var width = 300,
 		height = 500,
@@ -45,12 +45,22 @@ define(function( require, exports, module ){
 		context.fillStyle = "#123456";
 		context.fillRect(0, 0, width, height);
 	};
+	
+	var dir = 5;
 	var gameloop = function(){
 		clear();
-		moveCircle(5);
+		moveCircle(dir);
 		drawCircle();
 		setTimeout(gameloop, 1000 / 50 );
 	};
 	gameloop();
-		
+	
+	document.onkeydown = function(e){
+		if(e.which === 38){
+			dir = -5;
+		}else if( e.which === 40 ){
+			dir = 5;
+			
+		}
+	};
 });
