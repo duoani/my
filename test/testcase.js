@@ -49,23 +49,24 @@ define(function( require, exports ){
 //	var KeyEvent = require("KeyEvent");
 //	KeyEvent.on();
 	
-	QUnit.test("UI Test Case:", function( assert ){
-		var UI = require("UI");
-		console.log(UI)
-		var ui = new UI();
-		ui.onSoundOpen = function(){
-			assert.ok( true, "onSoundOpen" )
-		};
-		
-		ui.onSoundClose = function(){
-			assert.ok( true, "onSoundClose" )
-		};
-		
-		ui.onPlay = function(){
-			assert.ok( true, "onPlay" )
-		};
-		ui.onPause = function(){
-			assert.ok( true, "onPause" )
-		};
-	});
+//	QUnit.test("UI Test Case:", 4, function( assert ){
+//		
+//		var UI = require("UI");
+//		console.log(UI)
+//		var ui = new UI();
+//		ui.onSoundOpen = function(){
+//			assert.ok( true, "onSoundOpen" )
+//		};
+//		
+//		ui.onSoundClose = function(){
+//			assert.ok( true, "onSoundClose" )
+//		};
+//		
+//		ui.onPlay = function(){
+//			assert.ok( true, "onPlay" )
+//		};
+//		ui.onPause = function(){
+//			assert.ok( true, "onPause" )
+//		};
+//	});
 });

@@ -7,4 +7,6 @@ define(function(require, exports, module){
 	UI.prototype.__initBtnSound = function(){
 		var btn = Dom.get("")
 	};
+	
+	module.exports = UI;
 });

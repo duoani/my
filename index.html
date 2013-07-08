@@ -5,9 +5,19 @@
 <title>Piggy Jump</title>
 </head>
 <body>
+<style type="text/css">
+.canvas_wrap{margin:100px auto; text-align:center;}
+#hillLayer{width:300px; height:500px;}
+</style>
+<div class="canvas_wrap">
+	<canvas id="hillLayer"></canvas>
+	<button id="btn_start">start</button>
+	<button id="btn_stop">stop</button>
+</div>
 
-<script type="text/javascript" src="js/sea-debug.js"></script>
-<script type="text/javascript" src="js/sea-config.js"></script>
+
+<script type="text/javascript" src="./sea-debug.js"></script>
+<script type="text/javascript" src="./sea-config.js"></script>
 <script type="text/javascript">
 	seajs.use("main");
 </script>
