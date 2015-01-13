@@ -1,8 +1,7 @@
-define(function( require, exports, module ){
+define(function( require ){
 	var KeyEvent = require("KeyEvent");
 	var ImageLoader = require("ImageLoader");
 	var resource = require("resource");
-	var frame = require("frame");
 	var PigJump = require("PigJump");
 	var Dom = require("Dom");
 	
@@ -30,7 +29,7 @@ define(function( require, exports, module ){
 		};
 		pigJump.onupdate = function(){
 			console.log('pigJump update', this)
-		}
+		};
 		pigJump.setFPS(10);
 		pigJump.init();
 		
